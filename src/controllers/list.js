@@ -244,10 +244,6 @@ import { appRouter } from '../components/appRouter';
         }
 
         if (params.type === 'Programs') {
-            if (params.IsAiring === 'true') {
-                return apiClient.getLiveTvRecommendedPrograms(getInitialLiveTvQuery(instance, params, startIndex, limit));
-            }
-
             return apiClient.getLiveTvPrograms(getInitialLiveTvQuery(instance, params, startIndex, limit));
         }
 
